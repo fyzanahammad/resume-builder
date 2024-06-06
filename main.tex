@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape D Fyzan Ahammad} \\ \vspace{10pt}
+    \small \raisebox{-0.1\height}\faPhone\ 8309648519 ~ \href{mailto:siddheshdesai777@gmail.com}{\raisebox{-0.1\height}\faEnvelope\  \underline{fyzanahammad@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/fyzanahammad/}{\faLinkedin\ \underline{LinkedIn}}  ~
+    \href{https://github.com/fyzanahammad}{\faGithub\ \underline{Github}} ~
+    \href{https://fyzanahammad.github.io/}{\faGlobe\ \underline{Portfolio}}
+
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jamia Millia Islamia, New Delhi}{2020 -- 2024}
+      {Bachelor of Technology in Electronics and Communication Engineering }{\textbf{GPA - 8.6}}
+    \resumeSubheading
+      {Sri Medha, Anantapur}{2017 -- 2019}
+      {Class 12}{\textbf{Percentage - 92\%}}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Deep Learning and Research Intern} $|$ \emph{Enord - AI on Edge Drone Tech Start-Up}}{Feb 2024 - Present}
+          \resumeItemListStart
+            \resumeItem{Developed and fine-tuned computer vision models using \textbf{YOLOx} object detection framework, achieving over \textit{\textbf{90\%}} accuracy on projects focused on runway foreign object detection and solar panel hotspot detection.}
+            \resumeItem{Annotated and prepared datasets comprising \textit{\textbf{30,000}} images for runway foreign object detection and 5,000 images for solar panel hotspot detection, facilitating robust model training.}
+            \resumeItem{Trained the YOLOx Tiny Model with \textit{\textbf{5 million parameters}} on \textit{\textbf{AWS EC2}} instance over a period of 2 days, employing \textit{\textbf{SSH}} access for streamlined model optimization and achieving significant performance gains.}
+            \resumeItem{Achieved a \textbf{10X} increase in inference speed by optimizing deployment efficiency through the conversion of \textit{\textbf{PyTorch}} model into \textit{\textbf{TensorRT}} format, for facilitating seamless integration with \textit{\textbf{NVIDIA Jetson Nano}} 4gb on drones.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+    \resumeProjectHeading
+        {\textbf{Research Intern} $|$ \emph{DR. Zeeshan - JMI, New Delhi}}{Jan 2024 - Apr 2024}
+          \resumeItemListStart
+            \resumeItem{Conducted in-depth research on Parkinson's disease, integrating deep learning for prediction and severity assessment.}
+            \resumeItem{Reviewed numerous research papers to gain insights into current methodologies and opportunities for innovation.}
+            \resumeItem{Developed a deep learning model for physiotherapy guidance in Parkinson's disease, utilizing computer vision techniques for enhanced effectiveness.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+
+\vspace{1pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {{\faGithub}\, \href{https://github.com/fyzanahammad/PDF-Question-Answering-Application-with-Gen-AI.git}{\textbf{RAG Implementation: Extracting Information from PDFs with RAG}} $|$ \emph{Gemini-pro, Langchain, FAISS, Streamlit}}{}
+          \vspace{-7pt}
+          \resumeItemListStart
+            \resumeItem{Engineered a PDF Question Answering Application, integrating Google Generative AI for efficient text processing and answer generation.}
+            \resumeItem{Leveraged advanced language technologies like LangChain and LangChain Google GenAI for seamless text handling and conversational AI functionalities.}
+          \resumeItemListEnd
+          \vspace{-7pt}
+          
+      \resumeProjectHeading
+          {{\faGithub}\, \href{https://github.com/yourusername/repo1}{\textbf{Solar panel Hotspot detection using YOLOv8}} $|$ \emph{YOLOv8, Roboflow, TensorRT, NVIDIA-Jetson}}{}
+          \vspace{-7pt}
+          \resumeItemListStart
+            \resumeItem{Developed Solar Panel Hotspot Detection using YOLOv8, enhancing efficiency in identifying potential issues.}
+            \resumeItem{Implemented state-of-the-art Computer Vision techniques, and Roboflow for accurate detection.}
+            \resumeItem{Optimized model inference speed with TensorRT and deployed on NVIDIA Jetson for real-time monitoring.}
+          \resumeItemListEnd 
+          \vspace{-7pt}
+
+      \resumeProjectHeading
+          {{\faGithub}\, \href{https://github.com/fyzanahammad/Life-Saving-Signs-Real-Time-Detection-of-Emergency-Indian-Sign-Language.git}{\textbf{Life-Saving Signs: Real-Time Detection of Emergency Indian Sign Language}} $|$ \emph{LSTM, Streamlit}}{}
+          \vspace{-7pt}
+          \resumeItemListStart
+            \resumeItem{Engineered Real-time Indian Sign Language Detection using LSTM, improving accessibility for the hearing-impaired community.}
+            \resumeItem{Integrated LSTM models for accurate sign language recognition, enhancing communication possibilities.}
+            \resumeItem{Developed a user-friendly interface with Streamlit for intuitive interaction and seamless deployment.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+
+
+%-----------Technical Skills-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, C, C++, HTML/CSS, SQL} \\
+     \textbf{Technologies}{: Tensorflow, PyTorch, Keras, Numpy, Pandas, Matplotlib, OpenCV, YOLO, Linux, GitHub, NVIDIA-Jetson} \\
+     \textbf{Coursework}{: Data Structures and Algorithms, Object Oriented Programming, Computer Networks, Operating Systems, Database Management, Data Science, Artificial Intelligence, Machine Learning, Deep Learning } \\
+     \textbf{Other Skills}{: UI \& UX Design, Figma, Canva, MS Office, Graphic Designing, Digital Marketing } \\
+     \textbf{Languages}{: English(Professional proficiency), Urdu(Native), Telugu(Native), Hindi(Native), Tamil(Elementary Proficiency) } \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+%-----------Position of Responsibility-----------
+\section{Achievements}
+    \vspace{-10pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Piranha Tank} $|$ \emph{Finalists in Startup Pitching event}}{\textit{Sept 2022}}
+          \vspace{-7pt}
+          \resumeItemListStart
+            \resumeItem{Stood as \textbf{\textit{finalists}} of Jamia's E-Cell Pirana Tank, highlighting strong presentation and entrepreneurial skills.}
+            \resumeItem{Secured \textbf{\textit{incubation}} space at Jamia Millia Islamia.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      
+    \resumeSubHeadingListEnd
+\vspace{1pt}
+
+\end{document}
